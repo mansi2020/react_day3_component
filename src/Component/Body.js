@@ -1,19 +1,30 @@
 // import image
-import Familyphoto from "./Assets/familyImage.avif";
+import Familyphoto1 from "./Assets/familyImage.avif";
+import Familyphoto2 from "./Assets/familyImage2.avif";
+import Familyphoto3 from "./Assets/familyImage3.avif";
+import Familyphoto4 from "./Assets/familyImage4.avif";
+
 function Body() {
   return (
     <main>
       {/* section-1 */}
       <section id="section1">
-        <img src={Familyphoto}/>
-        <span id="main_icons">
+        <div className="body_container">
+          <div className="body_wrapper">
+            <img src={Familyphoto1}/>
+            <img src={Familyphoto2}/>
+            <img src={Familyphoto3}/>
+            <img src={Familyphoto4}/>
+          </div>
+        </div>
+        {/* <span id="main_icons">
           <i class="material-icons" id="main_icon1">
             chevron_right
           </i>
           <i class="material-icons" id="main_icon2">
             chevron_left
           </i>
-        </span>
+        </span> */}
       </section>
 
       {/* section-2 */}

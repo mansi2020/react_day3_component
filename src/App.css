@@ -95,7 +95,7 @@ body{
 }
 
 
-/* <-------------------main section style-------------------------------------------> */
+/* <-------------------body section style-------------------------------------------> */
 
 /* section 1 */
 #section1{
@@ -107,11 +107,38 @@ body{
   padding:0 20px;
   padding-bottom:40px;
 }
+.body_container{
+  width:69.69vw;
+  /* position: relative; */
+  /* left:14%; */
+  overflow: hidden;
+  /* transform:translate(-10%,-10%); */
+  box-shadow: 2px 2px 10px grey;
+}
+.body_wrapper{
+  width:100%;
+  display:flex;
+  animation:section1Slide 12s infinite;
+}
+@keyframes section1Slide{
+  0%{
+    transform:translateX(0);
+  }
+  33.33%{
+    transform: translateX(-100%);
+  }
+  66.66%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
+}
 
-#section1 img{
-  width:80%;
+.body_wrapper img{
+  /* width:100vw; */
   height:600px;
-  object-fit: fill;
+  object-fit:contain;
 }
 
 #main_icons{
